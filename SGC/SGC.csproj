@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FA0F45E-3F93-442F-B5C6-01646D5878FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGC</RootNamespace>
+    <AssemblyName>SGC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v18.1" />
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v18.1" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v18.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Core, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v18.1, Version=18.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACCESO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACCESO.Designer.cs">
+      <DependentUpon>ACCESO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APEDIDOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APEDIDOS.Designer.cs">
+      <DependentUpon>APEDIDOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUDITORIAF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUDITORIAF.Designer.cs">
+      <DependentUpon>AUDITORIAF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUDITORIAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUDITORIAP.Designer.cs">
+      <DependentUpon>AUDITORIAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUSUARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUSUARIO.Designer.cs">
+      <DependentUpon>AUSUARIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVENDEDOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVENDEDOR.Designer.cs">
+      <DependentUpon>AVENDEDOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTAC.Designer.cs">
+      <DependentUpon>CONSULTAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTAF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTAF.Designer.cs">
+      <DependentUpon>CONSULTAF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTAHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTAHR.Designer.cs">
+      <DependentUpon>CONSULTAHR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTAP.Designer.cs">
+      <DependentUpon>CONSULTAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DETALLEP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DETALLEP.Designer.cs">
+      <DependentUpon>DETALLEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ECUENTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ECUENTA.Designer.cs">
+      <DependentUpon>ECUENTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELOTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELOTE.Designer.cs">
+      <DependentUpon>ELOTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FACTURA_HR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACTURA_HR.Designer.cs">
+      <DependentUpon>FACTURA_HR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HOJAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOJAR.Designer.cs">
+      <DependentUpon>HOJAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOCALIZACIONF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOCALIZACIONF.Designer.cs">
+      <DependentUpon>LOCALIZACIONF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NUEVAHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NUEVAHR.Designer.cs">
+      <DependentUpon>NUEVAHR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PEDIDOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEDIDOS.Designer.cs">
+      <DependentUpon>PEDIDOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RHOJAR.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RHOJAR.Designer.cs">
+      <DependentUpon>RHOJAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RHOJAR2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RHOJAR2.Designer.cs">
+      <DependentUpon>RHOJAR2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPEDIDO.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPEDIDO.Designer.cs">
+      <DependentUpon>RPEDIDO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RUBICACION.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RUBICACION.Designer.cs">
+      <DependentUpon>RUBICACION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQL.cs" />
+    <Compile Include="TRAZABILIDADF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRAZABILIDADF.Designer.cs">
+      <DependentUpon>TRAZABILIDADF.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ACCESO.resx">
+      <DependentUpon>ACCESO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APEDIDOS.resx">
+      <DependentUpon>APEDIDOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUDITORIAF.resx">
+      <DependentUpon>AUDITORIAF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUDITORIAP.resx">
+      <DependentUpon>AUDITORIAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUSUARIO.resx">
+      <DependentUpon>AUSUARIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVENDEDOR.resx">
+      <DependentUpon>AVENDEDOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTAC.resx">
+      <DependentUpon>CONSULTAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTAF.resx">
+      <DependentUpon>CONSULTAF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTAHR.resx">
+      <DependentUpon>CONSULTAHR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONSULTAP.resx">
+      <DependentUpon>CONSULTAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DETALLEP.resx">
+      <DependentUpon>DETALLEP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ECUENTA.resx">
+      <DependentUpon>ECUENTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELOTE.resx">
+      <DependentUpon>ELOTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FACTURA_HR.resx">
+      <DependentUpon>FACTURA_HR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HOJAR.resx">
+      <DependentUpon>HOJAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOCALIZACIONF.resx">
+      <DependentUpon>LOCALIZACIONF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NUEVAHR.resx">
+      <DependentUpon>NUEVAHR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PEDIDOS.resx">
+      <DependentUpon>PEDIDOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RHOJAR.resx">
+      <DependentUpon>RHOJAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RHOJAR2.resx">
+      <DependentUpon>RHOJAR2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPEDIDO.resx">
+      <DependentUpon>RPEDIDO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RUBICACION.resx">
+      <DependentUpon>RUBICACION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRAZABILIDADF.resx">
+      <DependentUpon>TRAZABILIDADF.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
